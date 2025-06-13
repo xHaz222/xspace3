@@ -1,0 +1,118 @@
+/* Fondo oscuro */
+body {
+  background-color: #111;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-image: url('https://xatimg.com/image/93VQn1UBXO0F.jpg'); /* Fondo proporcionado */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* Pantalla inicial con fondo negro */
+.pantalla-inicial {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  position: fixed;
+  z-index: 10;
+}
+
+.nick-inicial {
+  color: white;
+  font-size: 60px;
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+}
+
+/* Deslizar el contenido */
+.contenido {
+  position: relative;
+  top: 100vh;
+  transition: top 1s ease-in-out;
+  width: 100%;
+  padding: 20px;
+}
+
+.fuera-servicio {
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  animation: vibrar 0.1s linear infinite;
+  color: #ff00ff;
+}
+
+@keyframes vibrar {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.nick {
+  font-size: 60px;
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
+}
+
+/* Efectos en la foto de perfil */
+.foto-perfil {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.foto-perfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Animación de la foto al hacer clic */
+.foto-perfil:active {
+  animation: fotoClick 0.5s ease-in-out;
+}
+
+@keyframes fotoClick {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Controles de música */
+.control-musica {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+}
+
+.control-musica button {
+  background-color: #ff00ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.control-musica button:hover {
+  background-color: #fff;
+  color: #ff00ff;
+}
