@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Neón - xHaz</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <!-- Pantalla Inicial con Fondo Negro -->
+  <div class="pantalla-inicial" onclick="mostrarContenido()">
+    <h1 class="nick-inicial">˹ރ𝗛͟ᴀ͟ᴢי˼</h1>
+  </div>
+
+  <!-- Contenido Deslizado -->
+  <div class="contenido" id="contenido">
+    <!-- Frase "Fuera de Servicio" con animación -->
+    <h1 class="fuera-servicio">Fuera de Servicio...</h1>
+
+    <!-- Reproductor de YouTube -->
+    <div class="youtube-container">
+      <iframe id="video" src="https://www.youtube.com/embed/8CR3TyfujLg?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <!-- Nick con efectos de resplandor -->
+    <div class="nick-container">
+      <h2 class="nick">˹ރ𝗛͟ᴀ͟ᴢי˼</h2> <!-- Este es el nick que tendrá efectos -->
+      <div class="foto-perfil" onclick="fotoClick()">
+        <img src="tu-foto.jpg" alt="Foto de Perfil">
+      </div>
+    </div>
+
+    <!-- Zona de amigos -->
+    <div class="amigos">
+      <h3>Amigos</h3>
+      <ul>
+        <li><a href="https://xat.me/xHaz">˹ރ𝗛͟ᴀ͟ᴢי˼</a></li>
+        <li><a href="https://xat.me/amigo1">Amigo 1</a></li>
+        <li><a href="https://xat.me/amigo2">Amigo 2</a></li>
+        <!-- Agrega más amigos aquí -->
+      </ul>
+    </div>
+
+    <!-- Espacio para imágenes y videos -->
+    <div class="feed">
+      <h3>Feed</h3>
+      <div class="imagenes">
+        <!-- Puedes agregar imágenes aquí -->
+        <img src="imagen1.jpg" alt="Imagen 1">
+      </div>
+      <div class="videos">
+        <!-- Videos de YouTube -->
+        <iframe src="https://www.youtube.com/embed/TuVideoID" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Lista de canciones (tipo Spotify) -->
+    <div class="lista-canciones">
+      <h3>Lista de Canciones</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=8CR3TyfujLg">Feid - Ateo</a></li>
+        <li><a href="https://www.youtube.com/watch?v=X19X">Feid - X19X</a></li>
+        <!-- Agrega más canciones aquí -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- Control de Música -->
+  <div class="control-musica">
+    <button onclick="cambiarCancion()">Siguiente Canción</button>
+    <button onclick="pausarMusica()">Pausar</button>
+  </div>
+
+  <script src="js/script.js"></script> <!-- Si agregas JS -->
+</body>
+</html>
